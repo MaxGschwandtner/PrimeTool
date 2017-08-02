@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <title>Primzahlentester</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="primes.css">
+    <script src="primes.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h2>Primzahlentester</h2>
+    </header>
+    <section>
+      <form name="checkPrime" onsubmit="return isPrime()">Gib die zu testende Zahl ein: <br>
+        <input type="text" name="entry">
+        <input type="submit" name="submit" value="Testen"> <br>
+      </form>
+
+      <div id="result1"></div>
+      <br><br>
+
+      <form name="factorize1" onsubmit="return factorize()">Gib die zu faktorisierende Zahl ein: <br>
+        <input type="text" name="entry2">
+        <input type="submit" name= "submit2" value="Testen">
+        <input type="radio" name="factor" value="fac">Faktorisieren
+        <input type="radio" name="factor" value="pfac">Primfaktorisieren
+
+      </form>
+
+      <div id="result2"></div>
+      <br><br>
+
+
+      <form name="findPrimes1" onsubmit="return findPrimes()">Gib den zu testenden Rahmen ein: <br>
+        <input type="text" name="entry3">
+        <input type="text" name="entry4">
+        <input type="submit" name="submit3" value="Testen">
+      </form>
+      <div id="result3"></div>
+    </section>
+  </div>
+</body>
+</html>
